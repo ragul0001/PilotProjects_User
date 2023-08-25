@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .loader {
+    border-top-color: #3498db;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+  }
+  .BgImages{
+    background-image:url('../../public/images/BgImages.png'); 
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:center;
+    height: 369px;
+  }
+  @-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background:#6C7AFF ;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+
+}
+.hover{
+   background:#eab308;
+   -webkit-animation: animationName 6s ease 0s infinite normal; /* Safari 4+ */
+  -moz-aanimation: animationName 6s ease 0s infinite normal; /* Fx 5+ */
+  -o-animation: animationName 6s ease 0s infinite normal;/* Opera 12+ */
+  animation: animationName 6s ease 0s infinite normal; 
+}
+
+#square:hover{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
+@-webkit-keyframes animationName {
+  0%    { background: white; }
+  25%   { background: #fefce8; }
+  50%   { background: #fef08a; }
+  75%   { background: #fde047; }
+  100%  { background: #eab308; }
+}
+@-moz-keyframes animationName {
+  0%    { background: white; }
+  25%   { background: #fefce8; }
+  50%   { background: #fef08a; }
+  75%   { background: #fde047; }
+  100%  { background: #eab308; }
+}
+@-o-keyframes animationName {
+  0%    { background: white; }
+  25%   { background: #fefce8; }
+  50%   { background: #fef08a; }
+  75%   { background: #fde047; }
+  100%  { background: #eab308; }
+}
+@keyframes animationName {
+  0%    { background: white; }
+  25%   { background: #fefce8; }
+  50%   { background: #fef08a; }
+  75%   { background: #fde047; }
+  100%  { background: #eab308; }
+}
+
+
